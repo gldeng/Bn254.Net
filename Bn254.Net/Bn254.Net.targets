@@ -1,0 +1,21 @@
+<Project>
+
+    <PropertyGroup>
+        <Bn254NativeLibDirectory>$(MSBuildThisFileDirectory)/../content/native</Bn254NativeLibDirectory>
+    </PropertyGroup>
+
+    <Target Name="Bn254CopyNativeLibs" AfterTargets="Build">
+        <ItemGroup>
+            <Bn254NativeLibs Include="$(Bn254NativeLibDirectory)/**/*.*" />
+        </ItemGroup>
+        <Copy SourceFiles="@(Bn254NativeLibs)" DestinationFolder="$(OutputPath)/native/%(RecursiveDir)" />
+    </Target>
+
+    <Target Name="Bn254CopyNativeLibsToPublish" AfterTargets="Publish">
+        <ItemGroup>
+            <Bn254NativeLibs Include="$(Bn254NativeLibDirectory)/**/*.*" />
+        </ItemGroup>
+        <Copy SourceFiles="@(Bn254NativeLibs)" DestinationFolder="$(PublishDir)/native/%(RecursiveDir)" />
+    </Target>
+
+</Project>
