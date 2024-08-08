@@ -24,8 +24,7 @@ namespace Bn254.Net
 
         static readonly Lazy<bn254_pairing> bn254_pairing
             = LazyDelegate<bn254_pairing>(nameof(bn254_pairing));
-
-
+        
         public static byte[] ModExp(byte[] @base, byte[] exp, byte[] modulus)
         {
             if (modulus.Length == 0)

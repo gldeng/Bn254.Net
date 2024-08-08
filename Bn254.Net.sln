@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bn254.Net.Tests", "Bn254.Ne
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bn254.Net", "Bn254.Net\Bn254.Net.csproj", "{2CAF37F8-1F86-4602-90D7-6424B7AEDD4B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZkWasmVerifier", "ZkWasmVerifier\ZkWasmVerifier.csproj", "{01FB61A6-8CA5-4BD0-B263-C82E3E49FB37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZkWasmVerifier.Tests", "ZkWasmVerifier.Tests\ZkWasmVerifier.Tests.csproj", "{D08FD6DA-A473-45AE-8977-E634DFB2A5E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{2CAF37F8-1F86-4602-90D7-6424B7AEDD4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CAF37F8-1F86-4602-90D7-6424B7AEDD4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CAF37F8-1F86-4602-90D7-6424B7AEDD4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01FB61A6-8CA5-4BD0-B263-C82E3E49FB37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01FB61A6-8CA5-4BD0-B263-C82E3E49FB37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01FB61A6-8CA5-4BD0-B263-C82E3E49FB37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01FB61A6-8CA5-4BD0-B263-C82E3E49FB37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D08FD6DA-A473-45AE-8977-E634DFB2A5E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D08FD6DA-A473-45AE-8977-E634DFB2A5E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D08FD6DA-A473-45AE-8977-E634DFB2A5E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D08FD6DA-A473-45AE-8977-E634DFB2A5E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
