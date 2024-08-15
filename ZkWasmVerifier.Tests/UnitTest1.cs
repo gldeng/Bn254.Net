@@ -13,6 +13,7 @@ public class Tests
     [Test]
     public void Test1()
     {
+        UInt256 x = 1;
         var proof = Proof.Select(DecToUInt256).ToArray();
         var verifyInstance = VerifyInstance.Select(DecToUInt256).ToArray();
         var aux = Aux.Select(DecToUInt256).ToArray();

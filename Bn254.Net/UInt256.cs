@@ -1,6 +1,5 @@
 using System;
 using System.Numerics;
-using System.Text.RegularExpressions;
 
 namespace Bn254.Net
 {

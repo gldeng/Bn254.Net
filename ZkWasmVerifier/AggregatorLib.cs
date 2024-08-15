@@ -1,8 +1,5 @@
 using Bn254.Net;
 using Nethereum.Util;
-using Org.BouncyCastle.Crypto.Signers;
-using Org.BouncyCastle.Crypto.Tls;
-
 
 namespace ZkWasmVerifier;
 
@@ -33,6 +30,7 @@ public class AggregatorLib
 
     public static void CheckOnCurve(UInt256 x, UInt256 y)
     {
+        // y^2 = x^3 + 3
         if (x.IsZero()) return;
         if (y.IsZero()) return;
         UInt256 l = y * y % PMod;
