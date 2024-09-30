@@ -1,1 +1,1 @@
-LIB_VERSION=v0.1.0-test.1
+LIB_VERSION=v0.1.0
